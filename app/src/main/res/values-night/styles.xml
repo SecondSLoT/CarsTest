@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CaptionStyle">
+        <item name="android:textSize">26sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CaptionStyle.CaptionYearStyle">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="RecyclerViewTextStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

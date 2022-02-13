@@ -77,8 +77,4 @@ class YearsFragment : Fragment(), OnYearClickListener {
             .actionYearsFragmentToSummaryFragment(args.make, args.model, year)
         findNavController().navigate(action)
     }
-
-    companion object {
-        private const val TAG = "YearsFragment"
-    }
 }

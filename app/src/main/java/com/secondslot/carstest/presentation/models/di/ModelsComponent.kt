@@ -1,7 +1,6 @@
 package com.secondslot.carstest.presentation.models.di
 
 import com.secondslot.carstest.di.AppComponent
-import com.secondslot.carstest.presentation.makes.ui.MakesFragment
 import com.secondslot.carstest.presentation.models.ui.ModelsFragment
 import dagger.Component
 

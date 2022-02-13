@@ -71,8 +71,4 @@ class MakesFragment : Fragment(), OnMakeClickListener {
         val action = MakesFragmentDirections.actionMakesFragmentToModelsFragment(makeId, make)
         findNavController().navigate(action)
     }
-
-    companion object {
-        private const val TAG = "MakesFragment"
-    }
 }

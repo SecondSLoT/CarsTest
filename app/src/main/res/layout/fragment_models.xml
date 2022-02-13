@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="@dimen/margin_screen"
-    android:layout_marginTop="@dimen/margin_screen"
+    android:layout_marginVertical="@dimen/margin_screen"
+    android:layout_marginLeft="@dimen/margin_screen"
     android:orientation="vertical">
 
     <TextView
@@ -16,8 +16,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/model_recycler_view"
-        android:layout_marginTop="@dimen/margin_recycler_top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_recycler_top" />
 
 </LinearLayout>

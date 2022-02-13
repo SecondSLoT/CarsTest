@@ -1,9 +1,13 @@
 package com.secondslot.carstest.data
 
+import android.util.Log
 import com.secondslot.carstest.data.db.AppDatabase
 import com.secondslot.carstest.domain.model.Make
 import com.secondslot.carstest.domain.model.Model
 import com.secondslot.carstest.domain.model.Year
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -65,6 +69,8 @@ class CarsService @Inject constructor(
     }
 
     companion object {
+        private const val TAG = "CarsService"
+
         const val INITIAL_PAGE_NUMBER = 0
         const val MAX_PAGE_SIZE = 50
     }

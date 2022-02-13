@@ -30,10 +30,11 @@ class MakesPagingSource @Inject constructor(
                 val nextKey = if (result.size < pageSize) null else page + 1
                 LoadResult.Page(result, prevKey, nextKey)
             } else {
+                Log.e(TAG, "Result is empty")
                 LoadResult.Error(Exception("Error loading data"))
             }
         } catch (e: Exception) {
-            Log.e(TAG, "Error loading data")
+            Log.e(TAG, "Error loading data. ${e.message}")
             LoadResult.Error(e)
         }
     }

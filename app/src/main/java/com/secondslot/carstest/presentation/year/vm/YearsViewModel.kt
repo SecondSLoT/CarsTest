@@ -9,5 +9,5 @@ class YearsViewModel(
 ) : ViewModel() {
 
     suspend fun loadYears(makeId: Int, model: String): List<Year> =
-            loadYearsUseCase.execute(makeId, model)
+        loadYearsUseCase.execute(makeId, model)
 }

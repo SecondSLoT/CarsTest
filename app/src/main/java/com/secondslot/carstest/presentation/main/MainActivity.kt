@@ -27,8 +27,6 @@ class MainActivity : AppCompatActivity() {
         // Hook up navigation button (up/drawer) on toolbar
         val appBarConfiguration = AppBarConfiguration(navController.graph, null)
 
-        // To hook up navigation button we can add this setting
-        // and then button "back" will work automatically
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
     }
 }
